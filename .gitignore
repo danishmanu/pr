@@ -1,0 +1,29 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python bytecode & cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+
+# Local configuration & database
+.env
+pharmacy.db
+*.sqlite3
+
+# Log files
+*.log
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# User uploads (keep default sample prescriptions and gitkeep)
+app/static/uploads/*
+!app/static/uploads/rx_sample_*.png
+!app/static/uploads/.gitkeep

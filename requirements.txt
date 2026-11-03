@@ -1,0 +1,12 @@
+flask>=3.0.0
+flask-sqlalchemy>=3.1.0
+flask-login>=0.6.3
+pymysql>=1.1.0
+psycopg2-binary>=2.9.9
+cryptography>=42.0.0
+opencv-python-headless>=4.8.0
+pytesseract>=0.3.10
+pillow>=10.0.0
+python-dotenv>=1.0.0
+gunicorn>=21.2.0
+anthropic>=2.0.0  # only needed for VISION_PROVIDER=claude

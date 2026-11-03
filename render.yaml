@@ -1,0 +1,27 @@
+services:
+  - type: web
+    name: pharmacare
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    autoDeploy: true
+    healthCheckPath: /auth/login
+    envVars:
+      - key: SECRET_KEY
+        generateValue: true
+      - key: FLASK_ENV
+        value: production
+      - key: FLASK_DEBUG
+        value: "0"
+      - key: DB_BACKEND
+        value: sqlite
+      - key: SQLITE_DB_PATH
+        value: pharmacy.db
+      - key: TESSERACT_CMD
+        value: /usr/bin/tesseract
+      - key: VISION_PROVIDER
+        value: auto
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: ANTHROPIC_API_KEY
+        sync: false
